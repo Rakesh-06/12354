@@ -399,7 +399,7 @@ var resizePizzas = function(size) {
 
   // Changes the value for the size of the pizza above the slider
   function changeSliderLabel(size) {
-    var pizzaSizeID = document.getElementById('pizzaSize');     //brought outside the switch....case for simplification
+    var pizzaSizeID = document.querySelector('#pizzaSize');     //brought outside the switch....case for simplification
     switch(size) {
       case "1":
         pizzaSizeID.innerHTML = "Small";
@@ -432,7 +432,7 @@ var resizePizzas = function(size) {
         break;
     }
     // Eliminated determineDx funtion to aviod FSL.
-    var randomPizzasClass = document.getElementsByClassName('randomPizzaContainer');     // placed outside loop
+    var randomPizzasClass = document.querySelectorAll('.randomPizzaContainer');     // placed outside loop
     var pizzalen = randomPizzasClass.length;
     // Iterate through the elements and changes their width
     for (var i = 0; i < pizzalen; i++) {
@@ -483,7 +483,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-  var items = document.getElementsByClassName('mover');    // cache items
+  var items = document.querySelectorAll('.mover');    // cache items
   var itemslen = items.length;     // cache length
   var scrollPhase = (document.body.scrollTop / 1250);       // calculation moved of loop
   for (var i = 0; i < itemslen; i++) {
@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var elem;
-  var movingPizzasID = document.getElementById('movingPizzas1');
+  var movingPizzasID = document.querySelector('#movingPizzas1');
   for (var i = 0; i < 10; i++) {
     var elem = document.createElement('img');
     elem.className = 'mover';
