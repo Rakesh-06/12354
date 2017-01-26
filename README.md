@@ -51,7 +51,7 @@ https://developers.google.com/speed/pagespeed/insights/
 
 * mobile: 93 / 100
 
-* desktop: 94 / 100
+* desktop: 96 / 100
 
 
 
