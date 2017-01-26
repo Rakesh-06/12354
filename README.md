@@ -22,6 +22,10 @@ You will find instructive comments in main.js.
 You might find the FPS Counter/HUD Display useful in Chrome developer tools described here: [Chrome Dev Tools tips-and-tricks](https://developer.chrome.com/devtools/docs/tips-and-tricks).
 
 
+#### To get Started
+
+	Follow the github link to get into the optimized website repo https://rakesh-06.github.io/12354/. Clone it or download as zip to the local system. Open index.html and pizza.html in your browser and use devtools.
+	
 
 ### Solution
 
@@ -44,6 +48,15 @@ You might find the FPS Counter/HUD Display useful in Chrome developer tools desc
 
 * PageSpeed Insights Score (image form) included with the source file.
 
+* var were defined out of the loop at some places (elem, phase).
+
+**Changes made as per reviewer suggestion**
+
+	* Changed the querySelectors with getElementById and getElementsByClassName
+	
+	* changePizzasize function is eliminated and the width modification were placed inside changeSliderLabel Function itself.
+	
+	* The number of pizzas covering the user screen was calculated based on user's screen.
 
 ##### PAGESPEED INSIGHTS SCORE
 
