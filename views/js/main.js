@@ -509,7 +509,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
   var elem;
-  var movingPizzasID = document.querySelector('#movingPizzas1');
+  var movingPizzasID = document.querySelector('#movingPizzas1');      //querySelector moved outside the for loop to reduce complexity
   for (var i = 0; i < 10; i++) {
     elem = document.createElement('img');
     elem.className = 'mover';
