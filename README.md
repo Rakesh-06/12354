@@ -62,9 +62,9 @@ You might find the FPS Counter/HUD Display useful in Chrome developer tools desc
 
 https://developers.google.com/speed/pagespeed/insights/
 
-* mobile: 93 / 100
+* mobile: 94 / 100
 
-* desktop: 96 / 100
+* desktop: 95 / 100
 
 
 
