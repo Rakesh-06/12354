@@ -511,7 +511,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var elem;
   var movingPizzasID = document.querySelector('#movingPizzas1');
   for (var i = 0; i < 10; i++) {
-    var elem = document.createElement('img');
+    elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
     elem.style.height = "100px";
